@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(3, 3, 42);
+}
+.container{
+    width: 100%;
+    max-width: 900px;
+    background-color: rgb(47, 37, 76);
+    margin: 0 auto;
+    /* border: 5px solid rgb(0, 255, 34); */
+    margin-top: 100px;
+}
+.box1{
+    width: 100%;
+    background-color: rgb(3, 3, 42);
+}
+.box2{
+    width: 100%;
+    height: 50vh;
+    border: 5px solid rgb(12, 12, 182);
+    
+    
+}
+.lightMode{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(3, 3, 42);
+}
+.logo{
+    color: white;
+    font-size: 2.2rem;
+}
+.lightMode1{
+    padding-top: 12px;
+    display: flex;
+    gap: 20px;
+}
+.logo1{
+    font-size: 1.4rem;
+    color: white;
+}
+.fa-sun{
+   color: white;
+   font-size: 20px;
+   cursor: pointer;
+}
+.search{
+    border-radius: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(47, 37, 76);
+}
+.space{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(3, 3, 42);
+}
+.search1{
+    display: flex;
+    gap: 20px;
+}
+.input{
+    width: 400px;
+    border: none;
+    background-color: rgb(47, 37, 76);
+    font-size: 1rem;
+    color: white;
+}
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(94, 147, 255);
+}
+.fa-magnifying-glass{
+    font-size: 32px;
+    color: blue;
+}
+.show{
+   background-color: white;
+}
+.show1{
+    color: rgb(46, 45, 45);
+}

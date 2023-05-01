@@ -2,6 +2,13 @@ body{
     background-color: rgb(3, 3, 42);
 }
 .container{
+    font-family: 'Explora', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
     width: 100%;
     max-width: 900px;
     background-color: rgb(47, 37, 76);
@@ -89,4 +96,12 @@ button{
 }
 .show1{
     color: rgb(46, 45, 45);
+}
+.dark{
+    display: none;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+}
+.show2{
+    display: none;
 }

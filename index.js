@@ -1,24 +1,23 @@
-// const lightMode = document.querySelector("#lightMode");
-// const container = document.querySelector('#container');
-// const DivlightMode = document.querySelector('#DivlightMode')
-// const DivSpace = document.querySelector('#Divspace');
-// const logo = document.querySelector('#logo');
-// const logo1 = document.querySelector('#logo1');
-// const body = document.querySelector('body');
-// const DivSearch = document.querySelector('#DivSearch');
-// const dark = document.querySelector('#dark');
+const lightMode = document.querySelector("#lightMode");
+const container = document.querySelector('#container');
+const DivlightMode = document.querySelector('#DivlightMode')
+const DivSpace = document.querySelector('#Divspace');
+const logo = document.querySelector('#logo');
+const logo1 = document.querySelector('#logo1');
+const body = document.querySelector('body');
+const DivSearch = document.querySelector('#DivSearch');
+const dark = document.querySelector('#dark');
+const p = document.querySelector('#p');
 
 
-// lightMode.addEventListener('click', () => {
-//     body.classList.toggle('show');
-//     lightMode.classList.toggle('show1')
-//     container.classList.toggle('show')
-//     DivSpace.classList.toggle('show')
-//     DivlightMode.classList.toggle('show')
-//     logo.classList.toggle('show1')
-//     logo1.classList.toggle('show2')
-//     dark.classList.toggle('dark')
-// });
+lightMode.addEventListener('click', () => {
+    body.classList.toggle('show');
+    lightMode.classList.toggle('show1')
+    DivlightMode.classList.toggle('show')
+    logo.classList.toggle('show1')
+    logo1.classList.toggle('show2')
+    dark.classList.toggle('dark1')
+});
 
 // (function () {
 // const getUsers = async () => {
@@ -134,6 +133,18 @@ async function getUser(username){
     }
 }
 
+// async function getUser(bio){
+//     try{
+//         const { data } = await axios(APIURL + username)
+//         createUserCard(data)
+//         getRepos(bio)
+//     }catch (err){
+//         if(err.response.status == 404){
+//             createErrorCard('No profile with this Username')
+//         }
+//     }
+// }
+
 async function getRepos(username){
     try{
         const { data } = await axios(APIURL + username + '/repos?sort=created')
@@ -145,6 +156,17 @@ async function getRepos(username){
     }
 }
 
+async function getbio(bio) {
+    try{
+        const { data } = await axios(APIURL + user.bio)
+        createUserCard(data)
+    }catch (err){
+        if(err.response.status == 404){
+            createErrorCard('heyyyy')
+        }
+    }
+}
+
 function createUserCard(user){
     const cardHTML = `
         <div class="card">
@@ -152,12 +174,17 @@ function createUserCard(user){
                 <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
             </div>
             <div class="user-info">
-                <h2>${user.name}</h2>
-                <p>${user.bio}</p>
+
+               <div class="name_bio">
+                <h2 class="user_name" >${user.name}</h2>
+                <p class="user_bio">${user.bio}</p>
+        
+                </div>
+
                 <ul>
-                    <li>${user.followers} <strong>Followers</strong></li>
-                    <li>${user.following} <strong>Following</strong></li>
-                    <li>${user.public_repos} <strong>Repos</strong></li>
+                    <li> <strong>Repos</strong>${user.public_repos}</li>
+                    <li> <strong>Followers</strong> ${user.followers}</li>
+                    <li> <strong>Following</strong> ${user.following}</li>
                 </ul>
 
                 <div id="repos"></div>

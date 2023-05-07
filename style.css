@@ -1,17 +1,6 @@
 body{
     background-color: rgb(3, 3, 42);
 }
-.box1{
-    width: 100%;
-    background-color: rgb(3, 3, 42);
-}
-.box2{
-    width: 100%;
-    height: 50vh;
-    border: 5px solid rgb(12, 12, 182);
-    
-    
-}
 .lightMode{
     display: flex;
     justify-content: space-between;
@@ -47,57 +36,9 @@ body{
     padding-right: 20px;
     background-color: rgb(47, 37, 76);
 }
-.space{
-    width: 100%;
-    height: 50px;
-    background-color: rgb(3, 3, 42);
-}
-.search1{
-    display: flex;
-    gap: 20px;
-}
-.input{
-    width: 400px;
-    border: none;
-    background-color: rgb(47, 37, 76);
-    font-size: 1rem;
-    color: white;
-}
-button{
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    font-size: 1.1rem;
-    width: 70px;
-    height: 40px;
-    background-color: rgb(94, 147, 255);
-}
 .fa-magnifying-glass{
     font-size: 32px;
     color: blue;
-}
-.show{
-   background-color: white;
-}
-.show1{
-    color: rgb(46, 45, 45);
-}
-
-.show2{
-    display: block;
-}
-
-/* div{
-    border: 10px;
-} */
-
-.fa-magnifying-glass{
-    font-size: 32px;
-    color: blue;
-}
-body{
-    background-color: rgb(3, 3, 42);
-    color: #fff;
 }
 .container{
     font-family: 'Explora', cursive;
@@ -109,10 +50,8 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
     width: 100%;
     max-width: 900px;
-    /* background-color: rgb(47, 37, 76); */
     margin: 0 auto;
-    /* border: 5px solid rgb(0, 255, 34);  */
-     margin-top: 100px;
+     margin-top: 70px;
  }
  .space{
     width: 100%;
@@ -120,14 +59,9 @@ font-family: 'Rubik', sans-serif;
     background-color: rgb(3, 3, 42);
 }
 .user-form{
-    /* margin-top: 40px;
-    margin-bottom: 40px; */
-    /* max-width: 700px; */
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
-    /* justify-content: start; */
     background-color: rgb(47, 37, 76);
     height: 70px;
     padding: 0 20px 0 20px;
@@ -149,18 +83,6 @@ button{
     border-radius: 20px;
 }
 .user-form input{
-    /* width: 50%;
-    display: block;
-    background-color: #4c2885;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    font-family: inherit;
-    font-size: 1rem;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0,0,0,0.1); */
     width: 400px;
     border: none;
     background-color: rgb(47, 37, 76);
@@ -170,7 +92,6 @@ button{
     border: none;
     font-size: 1rem;
     color: white;
-    /* border-radius: 20px; */
 }
 
 .user-form input::placeholder{
@@ -193,22 +114,41 @@ button{
     padding: 4rem;
     
 }
-
+.informations{
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+p{
+    color: #807c7c;
+}
+.info1{
+    display: flex;
+    gap: 10px;
+}
 .avatar{
     border-radius: 50%;
-    /* border: 10px solid #2a2a72; */
     height: 150px;
     width: 150px;
 }
 .user_name{
-    font-size: 2rem;
-}
-.user_bio{
     font-size: 1.5rem;
 }
-.name_bio{
-    line-height: 70px;
+.user_bio{
+    font-size: 1rem;
+}
+.user_main{
+    line-height: 40px;
     
+}
+.fa-brands{
+    font-size: 1.3rem;   
+}
+.informations .fa-solid{
+    font-size: 1.3rem;
 }
 .user-info {
     width: 100%;

@@ -127,6 +127,7 @@ async function getRepos(username){
 
 
 function createUserCard(user){
+//    const dateData = data.created_at.slice(0, dateData.created_at.length - 10);
     const cardHTML = `
         <div id="card" class="card">
             <div>
@@ -136,11 +137,10 @@ function createUserCard(user){
             
                <div class="user_main">
                 <h2 class="user_name" >${user.name}</h2>
-                <h3 class="user_account">${user.projects}</h3> 
+                <h3 class="user_account">@${user.login}</h3> 
                 <p class="user_bio">${user.bio}</p>
-                 
-        
                 </div>
+                
                 <ul>
                     <li> <strong>Repos</strong>${user.public_repos}</li>
                     <li> <strong>Followers</strong> ${user.followers}</li>
@@ -155,7 +155,7 @@ function createUserCard(user){
                     </div>
                     <div class="info1">
                     <i class="fa-brands fa-twitter"></i>
-                    <p >${user.twitter}</p>
+                    <p >${user.twitter_username}</p>
                     </div>
                     <div class="info1">
                     <i class="fa-solid fa-link"></i>

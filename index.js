@@ -125,12 +125,11 @@ async function getRepos(username){
     }
 }
 
-
+ 
 function createUserCard(user){
-//    const dateData = data.created_at.slice(0, dateData.created_at.length - 10);
     const cardHTML = `
         <div id="card" class="card">
-            <div>
+            <div class ="avatar_div">
                 <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
             </div>
             <div class="user-info">
@@ -139,6 +138,7 @@ function createUserCard(user){
                 <h2 class="user_name" >${user.name}</h2>
                 <h3 class="user_account">@${user.login}</h3> 
                 <p class="user_bio">${user.bio}</p>
+                <h4> ${user.date}</h4>
                 </div>
                 
                 <ul>
@@ -151,7 +151,6 @@ function createUserCard(user){
                     <div class="info1">
                     <i class="fa-solid fa-location-dot"></i>
                     <p >${user.location}</p>
-                    
                     </div>
                     <div class="info1">
                     <i class="fa-brands fa-twitter"></i>
@@ -159,7 +158,7 @@ function createUserCard(user){
                     </div>
                     <div class="info1">
                     <i class="fa-solid fa-link"></i>
-                    <p >${user.html_url}</p>
+                    <p >${user.blog}</p>
                     </div>
                     <div class="info1">
                     <i class="fa-solid fa-building"></i>
@@ -170,6 +169,7 @@ function createUserCard(user){
             </div>
         </div>
     `
+    // const dateData = `data.created_at.slice(0, dateData.created_at.length - 10)`;
     main.innerHTML = cardHTML
 }
 
@@ -213,13 +213,12 @@ form.addEventListener('submit', (e) => {
 const lightMode = document.querySelector("#lightMode");
 const container = document.querySelector('#container');
 const DivlightMode = document.querySelector('#DivlightMode')
-const DivSpace = document.querySelector('#Divspace');
 const logo = document.querySelector('#logo');
 const logo1 = document.querySelector('#logo1');
 const body = document.querySelector('body');
 const DivSearch = document.querySelector('#DivSearch');
 const dark = document.querySelector('#dark');
-const card = document.querySelector('#card');
+const card = document.querySelector('#cardiiiiii');
 
 
 
@@ -230,6 +229,6 @@ lightMode.addEventListener('click', () => {
     logo.classList.toggle('show1')
     logo1.classList.toggle('show2')
     dark.classList.toggle('dark1')
-    card.style.display = 'none';
-    console.log(card);
+    // user.cardHTML.classList.toggle('show')
+    // console.log(user);
 });

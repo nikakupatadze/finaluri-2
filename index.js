@@ -34,7 +34,7 @@ function createUserCard(user){
             <div class ="avatar_div">
                 <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
             </div>
-            <div class="user-info">
+            <div id="user-info" class="user-info">
             
                <div class="user_main">
                 <h2 class="user_name" >${user.name}</h2>
@@ -112,15 +112,12 @@ form.addEventListener('submit', (e) => {
 })
 
 const lightMode = document.querySelector("#lightMode");
-const container = document.querySelector('#container');
 const DivlightMode = document.querySelector('#DivlightMode')
 const logo = document.querySelector('#logo');
 const logo1 = document.querySelector('#logo1');
 const body = document.querySelector('body');
-const DivSearch = document.querySelector('#DivSearch');
-const dark = document.querySelector('#dark');
-
-
+const glass = document.querySelector('#glass');
+const search_div = document.querySelector('#search_div');
 
 lightMode.addEventListener('click', () => {
     body.classList.toggle('show');
@@ -128,5 +125,8 @@ lightMode.addEventListener('click', () => {
     DivlightMode.classList.toggle('show')
     logo.classList.toggle('show1')
     logo1.classList.toggle('show2')
-    dark.classList.toggle('dark1')
+    form.classList.toggle('gray');
+    search.classList.toggle('gray');
+  search_div.classList.toggle('gray');
+  card.classList.toggle('gray');
 });

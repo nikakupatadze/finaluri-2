@@ -83,14 +83,13 @@ button{
     background-color: rgb(47, 37, 76);
     border-radius: 20px;
 }
-.user-form input{
+.input{
     width: 400px;
     border: none;
     background-color: rgb(47, 37, 76);
     font-size: 1rem;
     color: white;
     width: 400px;
-    border: none;
     font-size: 1rem;
     color: white;
 }
@@ -99,11 +98,9 @@ button{
     color: #bbb;
     border-radius: 20px;
 }
-
 .user-form input:focus{
     outline: none;
 }
-
 .card {
     margin-top: 50px;
     width: 100%;
@@ -216,6 +213,7 @@ p{
  .dark1{
     display: block;
  }
+
  .search_div{
     display: flex;
     align-items: center;
@@ -223,8 +221,8 @@ p{
 button{
     margin-left: 0px;
 }
-.fa-moon{
-    display: none;
+.gray{
+    background-color: #9c9898;
 }
 
  @media (max-width:1018px){

@@ -116,6 +116,7 @@ const DivlightMode = document.querySelector('#DivlightMode')
 const logo = document.querySelector('#logo');
 const logo1 = document.querySelector('#logo1');
 const body = document.querySelector('body');
+const dark = document.querySelector('#dark');
 const glass = document.querySelector('#glass');
 const search_div = document.querySelector('#search_div');
 
@@ -127,6 +128,7 @@ lightMode.addEventListener('click', () => {
     logo1.classList.toggle('show2')
     form.classList.toggle('gray');
     search.classList.toggle('gray');
+    dark.classList.toggle('dark1')
   search_div.classList.toggle('gray');
   card.classList.toggle('gray');
 });

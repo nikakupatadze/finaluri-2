@@ -218,7 +218,6 @@ const logo1 = document.querySelector('#logo1');
 const body = document.querySelector('body');
 const DivSearch = document.querySelector('#DivSearch');
 const dark = document.querySelector('#dark');
-const card = document.querySelector('#cardiiiiii');
 
 
 
